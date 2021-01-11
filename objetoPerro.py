@@ -3,9 +3,14 @@ class Perro():
         self.raza=raza
         self.edad=edad
         self.peso=peso
-    def ladra(slef):
-        print('Guau, guau!!')
-'''Donde pone 'self' es donde payhton meterá el nombre que nosotros asignemos
-al perro, en este caso será Titán'''
+    def ladra(self):
+        if self.peso >8:
+            print('GUAU GUAU!!')
+        else:
+            print('guau, guau')
+        
+'''Donde pone 'self' es donde payhton meterá el nombre de la instancia que nosotros asignemos
+a la clase/objeto, en este caso será Titán'''
 
 Titán = Perro('Labrador', 8, 40)
+Pope = Perro('Yorkshire', 10, 2)
